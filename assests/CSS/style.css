@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
 body{
     margin: 0;
-    background-color: rgba(235, 234, 234, 1);
-    font-family: 'Roboto Slab', serif;  
+    background-color: rgb(222, 222, 222);
+    font-family: 'Roboto Slab', serif; 
+}
+body.dbClick{
+    display: flex; 
+    justify-content: space-between;
 }
 body.darkMode{
-    margin: 0;
-    background-color: rgba(106, 103, 103, 1);
-    font-family: 'Roboto Slab', serif;  
+    background-color: rgb(30, 30, 30); 
+    color:white;
 }
 main{
     display: flex;
@@ -15,9 +18,14 @@ main{
     align-items: center;
     height: 92vh;
 }
+main.dbClick{
+    height: 100vh;
+    width: 80%;
+}
 h1{
     padding-top: 10vh;
     font-size: 3rem;
+    cursor: pointer;
 }
 b{
     text-decoration:underline;
@@ -31,46 +39,43 @@ button{
     font-family: 'Roboto Slab', serif;  
     font-weight: 700;
     margin-top: 10vh;
-    background: rgba(69, 69, 69, 1);
+    background: rgb(39, 39, 39);
     color: white; 
     transition: 0.4s; 
 }
 button.darkMode{
-    width: 200px;
-    height: 65px;
-    border-radius: 50px;
-    border: 0;
-    font-size:x-large;
-    font-family: 'Roboto Slab', serif;  
-    font-weight: 700;
-    margin-top: 10vh;
-    background: rgba(235, 234, 234, 1);
+    background: rgb(225, 223, 223);
     color: black; 
-    transition: 0.4s; 
 }
 button:hover{
-    background-color:  rgb(16, 16, 16) ;
+    background-color:  rgb(0, 0, 0) ;
     cursor: pointer;
 }
 button.darkMode:hover{
-    background-color:  rgba(142, 142, 142, 0.963) ;
-    cursor: pointer;
+    background-color:  rgba(177, 177, 177, 0.963) ;
 }
 footer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 8vh;
-    background: rgba(106, 103, 103, 1);
+    background: rgb(45, 45, 45);
     color: white;
 }
 footer.darkMode{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 8vh;
-    background: rgba(235, 234, 234, 1);
+    background: rgb(235, 232, 232);
     color: black;
+    font-weight: bold;
+}
+footer.dbClick {
+    width: 20%;
+    height: 100vh;
+}
+p.dbClick{
+    width: 30vw;
+    height:18vw;
+    word-break: normal;
+    transform: rotate(-90deg);
 }
