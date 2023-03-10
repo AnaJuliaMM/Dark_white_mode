@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+body{
+    margin: 0;
+    background-color: rgba(235, 234, 234, 1);
+    font-family: 'Roboto Slab', serif;  
+}
+body.darkMode{
+    margin: 0;
+    background-color: rgba(106, 103, 103, 1);
+    font-family: 'Roboto Slab', serif;  
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 92vh;
+}
+h1{
+    padding-top: 10vh;
+    font-size: 3rem;
+}
+b{
+    text-decoration:underline;
+}
+button{
+    width: 200px;
+    height: 65px;
+    border-radius: 50px;
+    border: 0;
+    font-size:x-large;
+    font-family: 'Roboto Slab', serif;  
+    font-weight: 700;
+    margin-top: 10vh;
+    background: rgba(69, 69, 69, 1);
+    color: white; 
+    transition: 0.4s; 
+}
+button.darkMode{
+    width: 200px;
+    height: 65px;
+    border-radius: 50px;
+    border: 0;
+    font-size:x-large;
+    font-family: 'Roboto Slab', serif;  
+    font-weight: 700;
+    margin-top: 10vh;
+    background: rgba(235, 234, 234, 1);
+    color: black; 
+    transition: 0.4s; 
+}
+button:hover{
+    background-color:  rgb(16, 16, 16) ;
+    cursor: pointer;
+}
+button.darkMode:hover{
+    background-color:  rgba(142, 142, 142, 0.963) ;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    background: rgba(106, 103, 103, 1);
+    color: white;
+}
+footer.darkMode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    background: rgba(235, 234, 234, 1);
+    color: black;
+}
